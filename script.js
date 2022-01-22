@@ -28,9 +28,9 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "YOU GUESSED IT!!!💖";
     document.querySelector(".number").textContent = randomNumber;
     if (score > highScore) {
-      document.querySelector(".highscore").textContent = highScore;
       highScore = score;
     }
+    document.querySelector(".highscore").textContent = highScore;
     document.querySelector("body").style.backgroundColor = "#5ea758";
     document.querySelector(".message").style.fontSize = "3rem";
     document.querySelector(".number").style.width = "30rem";
