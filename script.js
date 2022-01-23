@@ -28,7 +28,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "YOU GUESSED IT!!!💖";
     document.querySelector(".number").textContent = randomNumber;
     if (score > highScore) {
-      highScore = score;
+      highScore = score; ///rm .git/index.lock
     }
     document.querySelector(".highscore").textContent = highScore;
     document.querySelector("body").style.backgroundColor = "#5ea758";
@@ -42,6 +42,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
 document.querySelector(".again").addEventListener("click", function () {
   score = 5;
+  randomNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector("body").style.backgroundColor = "black";
   document.querySelector(".message").textContent = "Start guessing...";
   document.querySelector(".guess").value = "";
